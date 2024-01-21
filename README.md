@@ -14,3 +14,9 @@ A simple rust OS for AArch64
 ```bash
 make
 ```
+
+## Run
+
+```bash
+make run
+```
