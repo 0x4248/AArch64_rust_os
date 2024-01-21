@@ -1,7 +1,10 @@
 /**
- * aarch64_rust_os
- *
-**/
+ * AArch64_rust_os
+ * A simple rust OS for AArch64
+ * Github://github.com/lewisevans2007/AArch64_rust_os
+ * By: Lewis Evans
+*/
+
 .globl _start
 .extern LD_STACK_PTR
 
@@ -14,10 +17,4 @@ _start:
     mov     sp, x30
     bl      start_kernel
 
-.equ PSCI_SYSTEM_OFF, 0x84000008
-.globl system_off
 
-// PSCI call to turn off the system.
-system_off:
-    ldr     x0, =PSCI_SYSTEM_OFF
-    hvc     #0

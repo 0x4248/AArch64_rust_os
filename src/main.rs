@@ -1,6 +1,5 @@
 #![no_std]
 #![no_main]
-
 /**
  * AArch64_rust_os
  * A simple rust OS for AArch64
@@ -14,7 +13,7 @@ use core::ptr;
 mod printk;
 mod power;
 
-global_asm!(include_str!("start.s"));
+global_asm!(include_str!("arch/boot/start.s"));
 
 const UART: *mut u8 = 0x0900_0000 as *mut u8;
 
