@@ -1,7 +1,7 @@
 # AArch64_rust_os
 # a simple rust os for aarch64
-# Github://github.com/lewisevans2007/AArch64_rust_os
-# By: Lewis Evans
+# Github://github.com/0x4248/AArch64_rust_os
+# By: 0x4248
 
 all: build run
 
